@@ -21,6 +21,7 @@ cd Arch_Setup_Wizard
 ## DWM and Suckless Packages: 
 ### DWM
 .dwm files are in the dwm folder. they need to be in ~/.dwm
+
 XSessions Entry:
 ```
 [Desktop Entry]
@@ -45,7 +46,9 @@ Works OOTB
 ## VIM:
 
 .vim files are in the vim folder. they need to be in ~/.vim
+
 .vimrc are also in the vim folder
 
 Themes come from https://github.com/flazz/vim-colorschemes
+
 Access the themes menu with ":colorscheme <ctrl+d>"
