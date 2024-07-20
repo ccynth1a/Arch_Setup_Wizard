@@ -1,7 +1,7 @@
 # Arch_Setup_Wizard
 This repo contains a basic setup script and files for a minimal arch setup. Should run on basically anything, mostly for portable work
 
-#Installation
+# Installation
 ```sh
 git clone https://github.com/ccynth1a/Arch_Setup_Wizard.git
 cd Arch_Setup_Wizard
