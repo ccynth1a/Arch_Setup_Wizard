@@ -22,16 +22,7 @@ cd Arch_Setup_Wizard
 ### DWM
 .dwm files are in the dwm folder. they need to be in ~/.dwm
 
-XSessions Entry:
-```
-[Desktop Entry]
-Encoding=UTF-8
-Name=Dwm
-Comment=Dynamic window manager
-Exec=/usr/local/bin/dwm
-Icon=dwm
-Type=XSession
-```
+XSessions Entry has already been placed in /usr/share/xsessions
 
 ### slstatus
 Works OOTB
