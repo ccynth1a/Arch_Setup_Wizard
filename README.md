@@ -42,7 +42,6 @@ Works OOTB
 ### st
 Works OOTB
 
-### st
 ## VIM:
 
 .vim files are in the vim folder. they need to be in ~/.vim
