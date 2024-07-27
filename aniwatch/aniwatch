@@ -2,7 +2,7 @@
 
 # Usage: aniwatch <series>
 series="$*"
-progress_file="$HOME/anime-stuff/progress.txt"
+progress_file="$HOME/anime-stuff/progress"
 
 if [ -z "$series" ]; then
 	echo "Incorrect Usage: aniwatch <series>"
