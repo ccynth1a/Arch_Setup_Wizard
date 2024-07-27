@@ -42,3 +42,14 @@ Works OOTB
 Themes come from https://github.com/flazz/vim-colorschemes
 
 Access the themes menu with ":colorscheme <ctrl+d>"
+
+## Aniwatch (My ani-cli wrapper)
+
+The aniwatch progress text file I've included is blank other than a format specifier. Entries will be automatically input as you watch
+
+Move the aniwatch directory to ~/
+
+If you wish to have it somewhere else, please edit the aniwatch shell script and change the file path that it looks for the progress file in
+Equally, if you wish to use a different text editor, replace the last line
+
+

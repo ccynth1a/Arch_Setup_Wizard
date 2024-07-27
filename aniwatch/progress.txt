@@ -1,0 +1,9 @@
+//FORMAT SPECIFICATION//
+
+[Series]
+Season: 
+Episode: 
+Timestamp: 
+
+///////////////////////
+

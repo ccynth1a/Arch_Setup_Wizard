@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# Usage: aniwatch <series>
+series="$*"
+progress_file="$HOME/anime-stuff/progress.txt"
+
+if [ -z "$series" ]; then
+	echo "Incorrect Usage: aniwatch <series>"
+	exit 1
+fi 
+
+get_episode_number() {
+  grep -i -A 3 "\[$series\]" "$progress_file" | grep "Episode:" | awk -F: '{print $2}' | xargs
+}
+
+# is series not in file, make a default listing
+if ! grep -i -q "\[$series\]" "$progress_file"; then
+  echo "[$series]" >> "$progress_file"
+  echo "Season:" >> "$progress_file"
+  echo "Episode:" >> "$progress_file"
+  echo "Timestamp:" >> "$progress_file"
+  echo >> "$progress_file" # need a newline to seperate the series
+fi
+
+episode_num=$(get_episode_number)
+
+# formulate the command
+if [ -z "$episode_num" ]; then
+  ani_cli_command="ani-cli $series"
+else
+  ani_cli_command="ani-cli -e $episode_num $series"
+fi
+
+# exec
+eval $ani_cli_command
+
+# open in vim for manual editing
+vim "$progress_file"
